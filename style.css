@@ -146,5 +146,29 @@ body {
 .close-btn:hover {
     color: #333;
 }
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* 1. Change the navbar from horizontal to vertical */
+    .navbar {
+        flex-direction: column; 
+        padding: 15px 20px;
+        gap: 20px; /* Adds breathing room between the stacked rows */
+    }
 
+    /* 2. Center everything instead of pushing to the sides */
+    .header-left.nav-links {
+        justify-content: center; 
+        flex-wrap: wrap; /* If links get too long, they will wrap to a new line gracefully */
+        gap: 15px;
+    }
+
+    .header-right {
+        justify-content: center;
+    }
+
+    /* 3. Slightly reduce the logo size for smaller screens */
+    .logo img {
+        height: 45px; /* Adjust this if it still feels too big on your phone */
+    }
+}
 
